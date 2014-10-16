@@ -1,0 +1,38 @@
+diff --git a/src/AppBundle/DataFixtures/ORM/AppFixtures.php b/src/AppBundle/DataFixtures/ORM/AppFixtures.php
+new file mode 100644
+index 0000000..1349792
+--- /dev/null
++++ b/src/AppBundle/DataFixtures/ORM/AppFixtures.php
+@@ -0,0 +1,19 @@
++<?php
++
++namespace AppBundle\DataFixtures\ORM;
++
++use Hautelook\AliceBundle\Alice\DataFixtureLoader;
++use Nelmio\Alice\Fixtures;
++
++class AppFixtures extends DataFixtureLoader
++{
++    /**
++     * {@inheritDoc}
++     */
++    protected function getFixtures()
++    {
++        return  array(
++            __DIR__ . '/heroes.yml',
++        );
++    }
++}
+diff --git a/src/AppBundle/DataFixtures/ORM/heroes.yml b/src/AppBundle/DataFixtures/ORM/heroes.yml
+new file mode 100644
+index 0000000..75ef52b
+--- /dev/null
++++ b/src/AppBundle/DataFixtures/ORM/heroes.yml
+@@ -0,0 +1,7 @@
++AppBundle\Entity\Hero:
++    hero1:
++        name: Yoshi
++        realName: T. Yoshisaur Munchakoopas
++        highScore: 99999
++        email: yoshi@nintendo.com
++        tagLine: Yoshi!

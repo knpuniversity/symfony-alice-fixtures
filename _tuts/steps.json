@@ -1,0 +1,30 @@
+{
+    "steps": [
+        {
+            "id": "start",
+            "name": "start",
+            "description": null
+        },
+        {
+            "id": "install-alicebundle",
+            "name": "Install AliceBundle",
+            "description": null
+        },
+        {
+            "id": "first-easy-fixtures",
+            "name": "First easy fixtures",
+            "description": null
+        },
+        {
+            "id": "using-a-range",
+            "name": "Using a range",
+            "description": null
+        },
+        {
+            "id": "using-current",
+            "name": "Using current()",
+            "description": null
+        }
+    ],
+    "sha": "f72504752a0f7d6ec04f6491a3c26a86e0f90f40"
+}
