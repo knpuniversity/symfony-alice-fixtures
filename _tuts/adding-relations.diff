@@ -1,0 +1,25 @@
+diff --git a/src/AppBundle/DataFixtures/ORM/characters.yml b/src/AppBundle/DataFixtures/ORM/characters.yml
+index 288b484..b74578f 100644
+--- a/src/AppBundle/DataFixtures/ORM/characters.yml
++++ b/src/AppBundle/DataFixtures/ORM/characters.yml
+@@ -5,6 +5,7 @@ AppBundle\Entity\Character:
+         highScore: 99999
+         email: yoshi@nintendo.com
+         tagLine: Yoshi!
++        universe: @universe_nintendo
+ 
+     character{2..10}:
+         name: <characterName()>
+@@ -12,3 +13,12 @@ AppBundle\Entity\Character:
+         highScore: <numberBetween(100, 99999)>
+         email: <email()>
+         tagLine: 80%? <sentence()>
++        universe: @universe_sega
++
++AppBundle\Entity\Universe:
++    universe_nintendo:
++        name: Nintendo
++    universe_sega:
++        name: Sega
++    universe_arcade:
++        name: Classic Arcade

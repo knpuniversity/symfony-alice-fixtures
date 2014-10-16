@@ -39,7 +39,22 @@
             "id": "custom-formatter",
             "name": "Custom formatter",
             "description": null
+        },
+        {
+            "id": "adding-relations",
+            "name": "Adding relations",
+            "description": null
+        },
+        {
+            "id": "random-relations",
+            "name": "Random relations",
+            "description": null
+        },
+        {
+            "id": "multiple-files",
+            "name": "Multiple Files",
+            "description": null
         }
     ],
-    "sha": "b6f510bbe00181dba25850d61521ab3745843e6e"
+    "sha": "43761831a4937b0523d3c8d0a6d54a353630364e"
 }

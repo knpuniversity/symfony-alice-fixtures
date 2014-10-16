@@ -1,0 +1,40 @@
+diff --git a/src/AppBundle/DataFixtures/ORM/AppFixtures.php b/src/AppBundle/DataFixtures/ORM/AppFixtures.php
+index 37e2aec..e3f2787 100644
+--- a/src/AppBundle/DataFixtures/ORM/AppFixtures.php
++++ b/src/AppBundle/DataFixtures/ORM/AppFixtures.php
+@@ -13,6 +13,7 @@ class AppFixtures extends DataFixtureLoader
+     protected function getFixtures()
+     {
+         return  array(
++            __DIR__ . '/universe.yml',
+             __DIR__ . '/characters.yml',
+         );
+     }
+diff --git a/src/AppBundle/DataFixtures/ORM/characters.yml b/src/AppBundle/DataFixtures/ORM/characters.yml
+index d9d326b..7bbee51 100644
+--- a/src/AppBundle/DataFixtures/ORM/characters.yml
++++ b/src/AppBundle/DataFixtures/ORM/characters.yml
+@@ -15,10 +15,3 @@ AppBundle\Entity\Character:
+         tagLine: 80%? <sentence()>
+         universe: @universe_*
+ 
+-AppBundle\Entity\Universe:
+-    universe_nintendo:
+-        name: Nintendo
+-    universe_sega:
+-        name: Sega
+-    universe_arcade:
+-        name: Classic Arcade
+diff --git a/src/AppBundle/DataFixtures/ORM/universe.yml b/src/AppBundle/DataFixtures/ORM/universe.yml
+new file mode 100644
+index 0000000..e31a209
+--- /dev/null
++++ b/src/AppBundle/DataFixtures/ORM/universe.yml
+@@ -0,0 +1,7 @@
++AppBundle\Entity\Universe:
++    universe_nintendo:
++        name: Nintendo
++    universe_sega:
++        name: Sega
++    universe_arcade:
++        name: Classic Arcade

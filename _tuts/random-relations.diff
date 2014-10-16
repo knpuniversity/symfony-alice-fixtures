@@ -1,0 +1,13 @@
+diff --git a/src/AppBundle/DataFixtures/ORM/characters.yml b/src/AppBundle/DataFixtures/ORM/characters.yml
+index b74578f..d9d326b 100644
+--- a/src/AppBundle/DataFixtures/ORM/characters.yml
++++ b/src/AppBundle/DataFixtures/ORM/characters.yml
+@@ -13,7 +13,7 @@ AppBundle\Entity\Character:
+         highScore: <numberBetween(100, 99999)>
+         email: <email()>
+         tagLine: 80%? <sentence()>
+-        universe: @universe_sega
++        universe: @universe_*
+ 
+ AppBundle\Entity\Universe:
+     universe_nintendo:
