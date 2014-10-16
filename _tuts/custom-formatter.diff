@@ -1,0 +1,35 @@
+diff --git a/src/AppBundle/DataFixtures/ORM/AppFixtures.php b/src/AppBundle/DataFixtures/ORM/AppFixtures.php
+index 49b873f..d1c79b2 100644
+--- a/src/AppBundle/DataFixtures/ORM/AppFixtures.php
++++ b/src/AppBundle/DataFixtures/ORM/AppFixtures.php
+@@ -16,4 +16,17 @@ class AppFixtures extends DataFixtureLoader
+             __DIR__ . '/characters.yml',
+         );
+     }
++
++    public function heroName()
++    {
++        $names = array(
++            'Mario',
++            'Luigi',
++            'Batman',
++            'Hercules',
++
++        );
++
++        return $names[array_rand($names)];
++    }
+ }
+diff --git a/src/AppBundle/DataFixtures/ORM/characters.yml b/src/AppBundle/DataFixtures/ORM/characters.yml
+index 64d7af1..595f0a7 100644
+--- a/src/AppBundle/DataFixtures/ORM/characters.yml
++++ b/src/AppBundle/DataFixtures/ORM/characters.yml
+@@ -7,7 +7,7 @@ AppBundle\Entity\Character:
+         tagLine: Yoshi!
+ 
+     character{2..10}:
+-        name: Super <firstName()>
++        name: <heroName()>
+         realName: <name()>
+         highScore: <numberBetween(100, 99999)>
+         email: <email()>

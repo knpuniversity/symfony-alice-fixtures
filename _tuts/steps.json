@@ -24,7 +24,22 @@
             "id": "using-current",
             "name": "Using current()",
             "description": null
+        },
+        {
+            "id": "using-faker-data",
+            "name": "Using Faker Data!",
+            "description": null
+        },
+        {
+            "id": "using-percentages-for-values",
+            "name": "Using percentages for values",
+            "description": null
+        },
+        {
+            "id": "custom-formatter",
+            "name": "Custom formatter",
+            "description": null
         }
     ],
-    "sha": "f72504752a0f7d6ec04f6491a3c26a86e0f90f40"
+    "sha": "b6f510bbe00181dba25850d61521ab3745843e6e"
 }

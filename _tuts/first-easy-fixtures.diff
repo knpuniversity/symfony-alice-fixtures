@@ -1,6 +1,6 @@
 diff --git a/src/AppBundle/DataFixtures/ORM/AppFixtures.php b/src/AppBundle/DataFixtures/ORM/AppFixtures.php
 new file mode 100644
-index 0000000..1349792
+index 0000000..49b873f
 --- /dev/null
 +++ b/src/AppBundle/DataFixtures/ORM/AppFixtures.php
 @@ -0,0 +1,19 @@
@@ -19,18 +19,18 @@ index 0000000..1349792
 +    protected function getFixtures()
 +    {
 +        return  array(
-+            __DIR__ . '/heroes.yml',
++            __DIR__ . '/characters.yml',
 +        );
 +    }
 +}
-diff --git a/src/AppBundle/DataFixtures/ORM/heroes.yml b/src/AppBundle/DataFixtures/ORM/heroes.yml
+diff --git a/src/AppBundle/DataFixtures/ORM/characters.yml b/src/AppBundle/DataFixtures/ORM/characters.yml
 new file mode 100644
-index 0000000..75ef52b
+index 0000000..6e99ce8
 --- /dev/null
-+++ b/src/AppBundle/DataFixtures/ORM/heroes.yml
++++ b/src/AppBundle/DataFixtures/ORM/characters.yml
 @@ -0,0 +1,7 @@
-+AppBundle\Entity\Hero:
-+    hero1:
++AppBundle\Entity\Character:
++    character1:
 +        name: Yoshi
 +        realName: T. Yoshisaur Munchakoopas
 +        highScore: 99999
