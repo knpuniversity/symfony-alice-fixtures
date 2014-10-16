@@ -14,12 +14,12 @@ class HomepageController extends Controller
      */
     public function homepageAction()
     {
-        $heroes = $this->getDoctrine()
-            ->getRepository('AppBundle:Hero')
+        $characters = $this->getDoctrine()
+            ->getRepository('AppBundle:Character')
             ->findAll();
 
         return $this->render('Homepage/homepage.html.twig', array(
-            'heroes' => $heroes
+            'characters' => $characters
         ));
     }
 }

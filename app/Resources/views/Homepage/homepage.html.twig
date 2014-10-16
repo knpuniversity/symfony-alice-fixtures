@@ -4,7 +4,7 @@
     <table class="table">
         <thead>
             <tr>
-                <th>Hero Name</th>
+                <th>Name</th>
                 <th>Real Name</th>
                 <th>High Score</th>
                 <th>Email</th>
@@ -14,14 +14,14 @@
             </tr>
         </thead>
         <tbody>
-            {% for hero in heroes %}
+            {% for character in characters %}
                 <tr>
-                    <td>{{ hero.name }}</td>
-                    <td>{{ hero.realName }}</td>
-                    <td>{{ hero.highScore }}</td>
-                    <td>{{ hero.email }}</td>
-                    <td>{{ hero.universeName }}</td>
-                    <td>{{ hero.tagLine }}</td>
+                    <td>{{ character.name }}</td>
+                    <td>{{ character.realName }}</td>
+                    <td>{{ character.highScore }}</td>
+                    <td>{{ character.email }}</td>
+                    <td>{{ character.universeName }}</td>
+                    <td>{{ character.tagLine }}</td>
                     <td>
                         {#
                             I normally use VichUploaderBundle and its Twig
@@ -29,14 +29,14 @@
                             to uploaded assets. But for simplicity, I'm just
                             hardcoding that assets live in the uploads/avatars directory
                         #}
-                        {% if hero.avatarFilename %}
-                            <img src="{{ asset('uploads/avatars/'~hero.avatarFilename) }}" alt="{{ hero.name }}"/>
+                        {% if character.avatarFilename %}
+                            <img src="{{ asset('uploads/avatars/'~character.avatarFilename) }}" alt="{{ character.name }}"/>
                         {% endif %}
                     </td>
                 </tr>
             {% else %}
                 <tr>
-                    <td colspan="7" style="text-align: center;">We need a hero</td>
+                    <td colspan="7" style="text-align: center;">We need to play more video games</td>
                 </tr>
             {% endfor %}
         </tbody>
