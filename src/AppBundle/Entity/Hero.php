@@ -20,24 +20,42 @@ class Hero
     private $id;
 
     /**
-     * @var string
-     *
      * @ORM\Column()
      */
     private $name;
 
     /**
-     * @ORM\ManyToOne(targetEntity="Universe")
-     * @ORM\JoinColumn(nullable=false)
+     * @ORM\Column()
      */
-    private $affiliatedUniverse;
+    private $realName;
+
+    /**
+     * @ORM\Column(type="integer")
+     */
+    private $highScore;
+
+    /**
+     * @ORM\Column()
+     */
+    private $email;
+
+    /**
+     * @var Universe
+     * @ORM\ManyToOne(targetEntity="Universe")
+     */
+    private $universe;
 
     /**
      * @var string
      *
-     * @ORM\Column()
+     * @ORM\Column(nullable=true)
      */
     private $tagLine;
+
+    /**
+     * @ORM\Column(nullable=true)
+     */
+    private $avatarFilename;
 
     /**
      * @return integer 
@@ -47,51 +65,76 @@ class Hero
         return $this->id;
     }
 
-    /**
-     * @param string $name
-     */
     public function setName($name)
     {
         $this->name = $name;
     }
 
-    /**
-     * @return string
-     */
     public function getName()
     {
         return $this->name;
     }
 
-    /**
-     * @return string
-     */
     public function getTagLine()
     {
         return $this->tagLine;
     }
 
-    /**
-     * @param string $tagLine
-     */
     public function setTagLine($tagLine)
     {
         $this->tagLine = $tagLine;
     }
 
-    /**
-     * @param Universe $affiliatedUniverse
-     */
-    public function setAffiliatedUniverse($affiliatedUniverse)
+    public function setUniverse($affiliatedUniverse)
     {
-        $this->affiliatedUniverse = $affiliatedUniverse;
+        $this->universe = $affiliatedUniverse;
     }
 
     /**
      * @return Universe
      */
-    public function getAffiliatedUniverse()
+    public function getUniverseName()
     {
-        return $this->affiliatedUniverse;
+        return $this->universe ? $this->universe->getName() : '';
+    }
+
+    public function setEmail($email)
+    {
+        $this->email = $email;
+    }
+
+    public function getEmail()
+    {
+        return $this->email;
+    }
+
+    public function setHighScore($highScore)
+    {
+        $this->highScore = $highScore;
+    }
+
+    public function getHighScore()
+    {
+        return $this->highScore;
+    }
+
+    public function setAvatarFilename($logoFilename)
+    {
+        $this->avatarFilename = $logoFilename;
+    }
+
+    public function getAvatarFilename()
+    {
+        return $this->avatarFilename;
+    }
+
+    public function setRealName($realName)
+    {
+        $this->realName = $realName;
+    }
+
+    public function getRealName()
+    {
+        return $this->realName;
     }
 }
