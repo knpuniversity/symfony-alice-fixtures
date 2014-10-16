@@ -12,19 +12,12 @@
         <div class="container">
 
             <div class="page-header">
-                <h1>KnpUniversity: Cookies and Voters</h1>
-                <p class="lead">A tutorial in not letting someone else eat your delicious cookies using Security Voters</p>
+                <h1>Alice: Fixtures Superhero</h1>
+                <p class="lead">Get some ridiculous data into your app ridiculously fast</p>
             </div>
 
             <div class="row">
                 <div class="col-md-12">
-                    {% for flashMessage in app.session.flashbag.get('success') %}
-                        <div class="alert alert-success">
-                            <i class="glyphicon glyphicon-cutlery"></i>
-                            {{ flashMessage }}
-                        </div>
-                    {% endfor %}
-
                     {% block body %}{% endblock %}
                 </div>
             </div>
