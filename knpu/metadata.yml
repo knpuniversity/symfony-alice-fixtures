@@ -1,0 +1,13 @@
+title:  Creating fixtures with Alice
+length: 12:22
+summary: |
+    
+    
+
+illustration: sf-fixtures.png
+
+chapters:
+    voters:
+        is_free:    true
+        video_key:  
+
