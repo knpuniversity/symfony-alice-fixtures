@@ -1,8 +1,10 @@
-title:  Creating fixtures with Alice
+title:  Making Fixtures Awesome with Alice
 length: 12:22
 summary: |
-    
-    
+    Fixtures: those little bits of test data you load (and reload)
+    locally so that you can test your site with some real-ish content.
+    Until now, creating fixtures was boring. But with Alice, they're
+    video-game-level exciting. Seriously!
 
 illustration: sf-fixtures-alice.png
 
@@ -10,4 +12,3 @@ chapters:
     voters:
         is_free:    true
         video_key:  iccxw2v5pd
-
