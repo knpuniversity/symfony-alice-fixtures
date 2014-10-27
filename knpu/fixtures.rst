@@ -1,6 +1,6 @@
-Hey guys! Fixtures are those little bits of data that you can load when you're 
-building something so that you actually have some data on your screen. Like 
-products or users or whatever else you want to play with. I hate writing 
+Fixtures, those nice little bits of data that you can put into your database
+so that when you're developing locally you actually have something to look at. 
+Like products or users or whatever else you want to play with. I hate writing 
 fixtures because I use this bundle and it's boring and manual and you end up 
 building really big ugly fixture classes. The reason is that this library just 
 doesn't do anything for you. It's entirely up to you to manage, persist and 
