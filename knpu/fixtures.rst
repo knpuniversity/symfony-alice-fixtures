@@ -521,3 +521,10 @@ There are a few topics that we haven't talked about like providers and templates
 but I'll cover those in a future lesson. 
 
 See you guys!
+
+.. _`DoctrineFixturesBundle`: http://symfony.com/doc/current/bundles/DoctrineFixturesBundle/index.html
+.. _`Alice`: https://github.com/nelmio/alice
+.. _`HautelookAliceBundle`: https://github.com/hautelook/AliceBundle
+.. _`Faker`: https://github.com/fzaninotto/Faker
+.. _`huge list`: https://github.com/fzaninotto/Faker#formatters
+.. _`ManyToOne`: http://knpuniversity.com/screencast/symfony2-ep3/doctrine-relationship
