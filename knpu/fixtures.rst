@@ -277,6 +277,8 @@ well. For example, if ``tagLine`` is optional then you may want to see what
 your set looks like when some of the characters don't have one. To do that
 create a percentage put a ? after it and then list what value you want:
 
+.. code-block:: yaml
+
     # src/AppBundle/DataFixtures/ORM/characters.yml
     AppBundle\Entity\Character:
         # ...
