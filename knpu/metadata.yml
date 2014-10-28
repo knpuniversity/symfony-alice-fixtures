@@ -9,6 +9,6 @@ summary: |
 illustration: sf-fixtures-alice.png
 
 chapters:
-    voters:
+    fixtures:
         is_free:    true
         video_key:  iccxw2v5pd
