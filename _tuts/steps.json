@@ -74,7 +74,12 @@
             "id": "image-randomize-filename-in-processor",
             "name": "Image: Randomize filename in processor",
             "description": null
+        },
+        {
+            "id": "image-injecting-the-logger",
+            "name": "Image: Injecting the logger",
+            "description": null
         }
     ],
-    "sha": "16c6fa529a3c8e3b4f802d9f77728172476ff7b2"
+    "sha": "83012fb0eb231717ca4a9c85ee6c9d22184cbc7c"
 }
