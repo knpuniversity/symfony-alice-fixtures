@@ -12,3 +12,8 @@ chapters:
     fixtures:
         is_free:    true
         video_key:  iccxw2v5pd
+    processors:
+        is_free:    false
+    processors-container:
+        is_free:    false
+
