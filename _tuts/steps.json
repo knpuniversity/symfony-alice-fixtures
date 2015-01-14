@@ -54,7 +54,27 @@
             "id": "multiple-files",
             "name": "Multiple Files",
             "description": null
+        },
+        {
+            "id": "image-add-formatter-for-random-image",
+            "name": "Image: Add formatter for random image",
+            "description": null
+        },
+        {
+            "id": "image-add-blank-processor",
+            "name": "Image: Add blank processor",
+            "description": null
+        },
+        {
+            "id": "image-copy-in-the-processor",
+            "name": "Image: Copy in the processor",
+            "description": null
+        },
+        {
+            "id": "image-randomize-filename-in-processor",
+            "name": "Image: Randomize filename in processor",
+            "description": null
         }
     ],
-    "sha": "43761831a4937b0523d3c8d0a6d54a353630364e"
+    "sha": "16c6fa529a3c8e3b4f802d9f77728172476ff7b2"
 }

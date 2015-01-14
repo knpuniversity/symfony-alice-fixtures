@@ -1,0 +1,50 @@
+diff --git a/src/AppBundle/DataFixtures/ORM/AppFixtures.php b/src/AppBundle/DataFixtures/ORM/AppFixtures.php
+index c7fcf77..178a322 100644
+--- a/src/AppBundle/DataFixtures/ORM/AppFixtures.php
++++ b/src/AppBundle/DataFixtures/ORM/AppFixtures.php
+@@ -45,4 +45,11 @@ class AppFixtures extends DataFixtureLoader
+ 
+         return $filenames[array_rand($filenames)];
+     }
++
++    protected function getProcessors()
++    {
++        return array(
++            new AvatarProcessor()
++        );
++    }
+ }
+diff --git a/src/AppBundle/DataFixtures/ORM/AvatarProcessor.php b/src/AppBundle/DataFixtures/ORM/AvatarProcessor.php
+new file mode 100644
+index 0000000..af2def6
+--- /dev/null
++++ b/src/AppBundle/DataFixtures/ORM/AvatarProcessor.php
+@@ -0,0 +1,28 @@
++<?php
++
++namespace AppBundle\DataFixtures\ORM;
++
++use Nelmio\Alice\ProcessorInterface;
++
++class AvatarProcessor implements ProcessorInterface
++{
++    /**
++     * Processes an object before it is persisted to DB
++     *
++     * @param object $object instance to process
++     */
++    public function preProcess($object)
++    {
++        var_dump(get_class($object));
++    }
++
++    /**
++     * Processes an object before it is persisted to DB
++     *
++     * @param object $object instance to process
++     */
++    public function postProcess($object)
++    {
++        // TODO: Implement postProcess() method.
++    }
++}
