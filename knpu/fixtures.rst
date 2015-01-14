@@ -519,7 +519,7 @@ The ``AppFixtures`` class, which has almost nothing in it, and our yml files
 which are very very small and straight forward. This is awesome! This puts
 the joy back into writing fixtures files for me and I absolutely love it.
 
-There are a few topics that we haven't talked about like providers and templates
+There are a few topics that we haven't talked about like processors and templates
 but I'll cover those in a future lesson. 
 
 See you guys!
