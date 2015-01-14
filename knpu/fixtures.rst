@@ -123,7 +123,7 @@ Let's call ours ``characters.yml`` and then go ahead and create that file::
     protected function getFixtures()
     {
         return  array(
-            __DIR__ . '/test.yml',
+            __DIR__ . '/characters.yml',
         );
     }
 
