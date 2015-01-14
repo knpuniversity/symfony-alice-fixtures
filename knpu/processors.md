@@ -1,7 +1,7 @@
 # Processors: Do Custom Stuff While Loading
 
-I have to say, these are probably the nicest super-hero fixtures ever. But
-we've neglected a column! The avatar.
+I don't want to brag, but these are probably the nicest super-hero fixtures
+ever. But we've neglected a column! The avatar.
 
 Check out the `Character` entity - we have a column for this called `avatarFilename`:
 
@@ -22,7 +22,7 @@ image file into this directory. I don't want a bunch of broken images!
 ## Filling in avatarFilename Data
 
 But, we'll worry about that later. First, let's get some values into the
-`avatarFilename` field. Open up `characters.yml` and start t o set the `avatarFilename`.
+`avatarFilename` field. Open up `characters.yml` and start to set the `avatarFilename`.
 
 [[[ code('fce18a666d') ]]]
 
@@ -89,8 +89,8 @@ the class of the object:
 
 [[[ code('28d4848632') ]]]
 
-Cool new processor class, check! To hook it up, go back into `AppFixtures`,
-The parent `DataFixtuersLoader` class has an empty `getProcessors()` method
+Cool new processor class, check! To hook it up, go back into `AppFixtures`.
+The parent `DataFixturesLoader` class has an empty `getProcessors()` method
 that we need to override. Because it's empty, we don't need to call the parent.
 Just return an array with a new `AvatarProcessor` object in it:
 

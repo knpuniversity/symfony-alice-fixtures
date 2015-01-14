@@ -57,12 +57,14 @@ So we can say `$this->container->get('logger')`:
 [[[ code('08192b2efd') ]]]
 
 To test this out, open up a new tab and let's tail the `app/logs/dev.log`
-directory. Because `app/console` runs in the `dev` environment by default.
+directory, because `app/console` runs in the `dev` environment by default.
 And let's grep it for the word `Character`:
 
 ```
 tail -f app/logs/dev.log | grep "Character"
 ```
+
+Now reload the fixtures!
 
 ```
 php app/console doctrine:fixtures:load
