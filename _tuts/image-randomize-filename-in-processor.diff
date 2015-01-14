@@ -1,39 +1,20 @@
 diff --git a/src/AppBundle/DataFixtures/ORM/AvatarProcessor.php b/src/AppBundle/DataFixtures/ORM/AvatarProcessor.php
-index af2def6..5bc3b59 100644
+index c34adc6..5bc3b59 100644
 --- a/src/AppBundle/DataFixtures/ORM/AvatarProcessor.php
 +++ b/src/AppBundle/DataFixtures/ORM/AvatarProcessor.php
-@@ -2,7 +2,9 @@
+@@ -24,13 +24,16 @@ class AvatarProcessor implements ProcessorInterface
+         }
  
- namespace AppBundle\DataFixtures\ORM;
- 
-+use AppBundle\Entity\Character;
- use Nelmio\Alice\ProcessorInterface;
-+use Symfony\Component\Filesystem\Filesystem;
- 
- class AvatarProcessor implements ProcessorInterface
- {
-@@ -13,7 +15,25 @@ class AvatarProcessor implements ProcessorInterface
-      */
-     public function preProcess($object)
-     {
--        var_dump(get_class($object));
-+        if (!$object instanceof Character) {
-+            return;
-+        }
-+
-+        if (!$object->getAvatarFilename()) {
-+            return;
-+        }
-+
-+        $projectRoot = __DIR__.'/../../../..';
+         $projectRoot = __DIR__.'/../../../..';
 +        $targetFilename = 'fixtures_'.mt_rand(0, 100000).'.jpg';
-+
-+        $fs = new Filesystem();
-+        $fs->copy(
-+            $projectRoot.'/resources/'.$object->getAvatarFilename(),
+ 
+         $fs = new Filesystem();
+         $fs->copy(
+             $projectRoot.'/resources/'.$object->getAvatarFilename(),
+-            $projectRoot.'/web/uploads/avatars/'.$object->getAvatarFilename(),
 +            $projectRoot.'/web/uploads/avatars/'.$targetFilename,
-+            true
-+        );
+             true
+         );
 +
 +        $object->setAvatarFilename($targetFilename);
      }

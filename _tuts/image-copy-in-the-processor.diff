@@ -1,0 +1,38 @@
+diff --git a/src/AppBundle/DataFixtures/ORM/AvatarProcessor.php b/src/AppBundle/DataFixtures/ORM/AvatarProcessor.php
+index af2def6..c34adc6 100644
+--- a/src/AppBundle/DataFixtures/ORM/AvatarProcessor.php
++++ b/src/AppBundle/DataFixtures/ORM/AvatarProcessor.php
+@@ -2,7 +2,9 @@
+ 
+ namespace AppBundle\DataFixtures\ORM;
+ 
++use AppBundle\Entity\Character;
+ use Nelmio\Alice\ProcessorInterface;
++use Symfony\Component\Filesystem\Filesystem;
+ 
+ class AvatarProcessor implements ProcessorInterface
+ {
+@@ -13,7 +15,22 @@ class AvatarProcessor implements ProcessorInterface
+      */
+     public function preProcess($object)
+     {
+-        var_dump(get_class($object));
++        if (!$object instanceof Character) {
++            return;
++        }
++
++        if (!$object->getAvatarFilename()) {
++            return;
++        }
++
++        $projectRoot = __DIR__.'/../../../..';
++
++        $fs = new Filesystem();
++        $fs->copy(
++            $projectRoot.'/resources/'.$object->getAvatarFilename(),
++            $projectRoot.'/web/uploads/avatars/'.$object->getAvatarFilename(),
++            true
++        );
+     }
+ 
+     /**
