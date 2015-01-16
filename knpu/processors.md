@@ -24,7 +24,7 @@ image file into this directory. I don't want a bunch of broken images!
 But, we'll worry about that later. First, let's get some values into the
 `avatarFilename` field. Open up `characters.yml` and start to set the `avatarFilename`.
 
-[[[ code('fce18a666d') ]]]
+[[[ code('807df17ca4') ]]]
 
 For *any* of this to work, we're going to need some *real* image files handy.
 Fortunately, I got some for us! They live in a `resources` directory at the
