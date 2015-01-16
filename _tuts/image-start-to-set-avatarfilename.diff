@@ -1,0 +1,10 @@
+diff --git a/src/AppBundle/DataFixtures/ORM/characters.yml b/src/AppBundle/DataFixtures/ORM/characters.yml
+index 7bbee51..1e94042 100644
+--- a/src/AppBundle/DataFixtures/ORM/characters.yml
++++ b/src/AppBundle/DataFixtures/ORM/characters.yml
+@@ -14,4 +14,4 @@ AppBundle\Entity\Character:
+         email: <email()>
+         tagLine: 80%? <sentence()>
+         universe: @universe_*
+-
++        avatarFilename:

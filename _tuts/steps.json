@@ -56,6 +56,11 @@
             "description": null
         },
         {
+            "id": "image-start-to-set-avatarfilename",
+            "name": "Image: Start to set avatarFilename",
+            "description": null
+        },
+        {
             "id": "image-add-formatter-for-random-image",
             "name": "Image: Add formatter for random image",
             "description": null
@@ -81,5 +86,5 @@
             "description": null
         }
     ],
-    "sha": "cfa8a7f2b2f92ebe3c60d76c4808d3e096502a92"
+    "sha": "c595ff4d7ace790b30e92e43b0006a6fd06ffe33"
 }
