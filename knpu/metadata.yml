@@ -1,5 +1,4 @@
 title:  Making Fixtures Really Awesome with Alice
-length: 12:22
 summary: |
     Fixtures: those little bits of test data you load (and reload)
     locally so that you can test your site with some real-ish content.
