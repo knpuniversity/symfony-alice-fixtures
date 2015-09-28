@@ -10,7 +10,7 @@ illustration: sf-fixtures-alice.png
 chapters:
     fixtures:
         is_free:    true
-        video_key:  iccxw2v5pd
+        video_key:  140213820
     processors:
         is_free:    false
         video_key:  3r9vzou56z
