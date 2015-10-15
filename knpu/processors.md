@@ -1,5 +1,10 @@
 # Processors: Do Custom Stuff While Loading
 
+***TIP
+A newer version of HauteLookAliceBundle has been released and portions of this
+tutorial won't apply to that new version.
+***
+
 I don't want to brag, but these are probably the nicest super-hero fixtures
 ever. But we've neglected a column! The avatar.
 
