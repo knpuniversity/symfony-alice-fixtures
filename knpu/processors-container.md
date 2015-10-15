@@ -1,4 +1,9 @@
-## Creating Unique Files
+# Creating Unique Files
+
+***TIP
+A newer version of HauteLookAliceBundle has been released and portions of this
+tutorial won't apply to that new version.
+***
 
 There's a little issue. These two kittens are the *exact* same filename.
 The first is `kitten2.jpg` and so is the second. That's fine for us, but
