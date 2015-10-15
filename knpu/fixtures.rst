@@ -1,6 +1,11 @@
 Making Fixtures Awesome with Alice
 ==================================
 
+.. tip::
+
+    A newer version of HauteLookAliceBundle has been released and portions
+    of this tutorial won't apply to that new version.
+
 Fixtures, those nice little bits of data that you can put into your database
 so that when you're developing locally you actually have something to look at:
 like products or users or whatever else you want to play with. I hate writing
